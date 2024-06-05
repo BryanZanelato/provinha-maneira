@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Formulário de Notas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Notas</h1>
+        <form id="notasForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required><br>
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" required><br>
+            <label for="nota1">Primeira Nota:</label>
+            <input type="number" id="PrimeiraNota" min="0" max="5" required><br>
+            <label for="nota2">Segunda Nota:</label>
+            <input type="number" id="SegundaNota" min="0" max="5" required><br>
+            <button type="button" onclick="adicionarAluno()">Adicionar Aluno</button>
+        </form>
+        <h2>Lista de Alunos</h2>
+        <div class="table-container">
+            <table id="tabelaAlunos">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Matrícula</th>
+                        <th>Primeira Nota</th>
+                        <th>Segunda Nota</th>
+                        <th>Média</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
